@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+main {
+    display: grid;
+    font-family: Roboto;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+    color: #BBB;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 2px #EEE solid;
+    border-radius: 5px;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown ul {
+    padding: 0;
+}
+
+.dropdown li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #EEE;
+}
+
+/* .dropdown span {} */
+
+.dropdown figure {
+    display: inline;
+    position: relative;
+    top: 3px;
+    margin: 5px;
+}
+
+.menu {
+    display: block;
+    grid-column: 2;
+    border: 2px #EEE solid;
+    margin-top: 10px;
+    box-shadow: -1px 1px 3px #EEE;
+}
+
+.menu input {
+    border: 0;
+    margin: 10px;
+    outline: none;
+    font-size: 1em;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 0 10px 10px;
+    margin-top: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    background-color: #DDD;
+}
+
+.hidden {
+    display: none;
+}
+
+/* .test {
+    margin-top: 100px;
+    color: white;
+    background-color: green;
+} */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main>
+            <section class="label">
+                <p>Label</p>
+            </section>
+            
+            <section class="dropdown" onclick="showMenu()">
+                <ul id="tags"></ul>
+            </section>
+    
+            <section class="menu hidden">
+                <input type="text" onkeyup="filterMenu(this)">
+                <ul id="options"></ul>
+            </section>
+            <!-- <section class="test">Test</section> -->
+            <script src="script.js"></script>
+        </main>
+    </body>
+</html>
